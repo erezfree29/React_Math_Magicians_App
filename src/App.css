@@ -1,15 +1,12 @@
-.App {
-  text-align: center;
-}
-
 .calculation {
-  background-color:#858694;
+  background-color: #858694;
   height: 5vh;
 }
 
 .App {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 table {
