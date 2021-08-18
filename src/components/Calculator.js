@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Table from './table';
+import Table from './Table';
 
 import '../App.css';
 
@@ -15,4 +15,4 @@ class Calculator extends React.PureComponent {
   }
 }
 
-export default { Calculator };
+export default Calculator;
