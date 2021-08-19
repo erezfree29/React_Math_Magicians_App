@@ -34,3 +34,13 @@ table td {
   background-color: #f5913e;
   border-bottom: 1px solid gray;
 }
+
+button {
+  width: 100%;
+  border: none;
+  background-color: #e0e0e0;
+}
+
+.no_border {
+  border: none;
+}
