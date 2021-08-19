@@ -1,5 +1,5 @@
 .calculation {
-  background-color: #858694;
+  background-color: #808080;
   height: 5vh;
 }
 
@@ -44,3 +44,16 @@ button {
 .no_border {
   border: none;
 }
+
+.screen {
+  align-items: left;
+}
+
+table { 
+  table-layout:fixed; width:200px;
+}
+
+.align {
+  float: right;
+}
+

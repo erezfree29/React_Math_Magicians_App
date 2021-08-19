@@ -43,11 +43,13 @@ class Calculator extends React.PureComponent {
         <table>
           <thead className="calculation">
             <tr>
-              <td colSpan="1" className="screen">
-                {
-                // eslint-disable-next-line react/destructuring-assignment
-                display(this.state.total, this.state.operation, this.state.next)
-                }
+              <td colSpan="4" className="screen">
+                <div className="align">
+                  {
+                  // eslint-disable-next-line react/destructuring-assignment
+                  display(this.state.total, this.state.operation, this.state.next)
+                  }
+                </div>
               </td>
             </tr>
           </thead>
