@@ -1,9 +1,6 @@
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable no-alert */
-/* eslint-disable react/no-unused-state */
-/* eslint-disable react/no-access-state-in-setstate */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 
 import '../App.css';
@@ -25,25 +22,45 @@ class Calculator extends React.PureComponent {
   // eslint-disable-next-line class-methods-use-this
   onClick = (buttonName) => {
     this.setState((prevState) => calculate(prevState, buttonName));
+    // if (buttonName.match(/[0-9]+/)) {
+    //   alert('111');
+    // }
   };
 
   render() {
+    function display(total, operation, next) {
+      if (next !== null && operation === null) {
+        return next;
+      }
+      if (operation !== null && next !== null) {
+        return next;
+      }
+
+      if (operation) {
+        return operation;
+      }
+      if (total) {
+        return total;
+      }
+      return false;
+    }
     return (
       <div>
         <h1>My Calculator</h1>
         <table>
           <thead className="calculation">
             <tr>
-              <td colSpan="4" className="screen">
-                {`${this.state.total}`}
+              <td colSpan="1" className="screen">
+                {display(this.state.total, this.state.operation, this.state.next)}
               </td>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td className="gray_cell" type="button" onClick={() => this.onClick('AC')}>
-                AC
+              <td className="gray_cell" type="button">
+                <button type="submit" onClick={() => this.onClick('AC')} onKeyDown={() => this.onClick('AC')}>AC</button>
               </td>
+
               <td className="gray_cell" type="button" onClick={() => this.onClick('+/-')}>
                 +/-
               </td>
@@ -64,7 +81,7 @@ class Calculator extends React.PureComponent {
               <td className="gray_cell" type="button" onClick={() => this.onClick('9')}>
                 9
               </td>
-              <td className="orange_cell" type="button" onClick={() => this.onClick('×')}>
+              <td className="orange_cell" type="button" onClick={() => this.onClick('x')}>
                 &#10005;
               </td>
             </tr>
