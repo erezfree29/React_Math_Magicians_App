@@ -1,28 +1,16 @@
- const oldState = this.state;
-    this.setState({
-      obj: {
-        next: calculate(oldState, buttonName).next,
-        operation: calculate(oldState, buttonName).operation,
-        total: calculate(oldState, buttonName).total,
-      },
-    });
-
-
-
-
-
-
-
-
-
-
-
-
-
-    this.setState({
-      obj: {
-        total: 6,
-        next: 7,
-        operation: '+',
-      },
-    });
+class Cat extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {sleeping: true};
+  }
+  render() {
+    return (
+      <div>
+        <p>{`The cat is ${this.state.sleeping ? "sleeping" : "eating"}`}</p>
+        <button onClick={() => this.setState({ sleeping: false })}>
+          Wake up!
+        </button>
+      </div>
+    );
+  }
+}
