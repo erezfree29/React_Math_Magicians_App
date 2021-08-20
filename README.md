@@ -26,7 +26,22 @@ To run the project on your local machine, please run the following commands on y
 
 > 1. run `git clone https://github.com/erezfree29/Math_Magicians_App/`
 > 2. run `cd Math_Magicians_App`
-> 3. Open the index.html file with your browser
+> 3. type npm run start
+
+you  need to make sure you have the following on your machine
+
+> 1.install nodeJs on your local machine 
+[NodeJs Installation](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04)
+
+> 2. install webpack on your local machine
+[Webpack Installation](https://webpack.js.org/guides/installation/)
+
+> 3. install webpack on your local machine
+[Babel instllation](https://zoomadmin.com/HowToInstall/UbuntuPackage/babel)
+
+> 4. install react-dom on your local machine
+[React-doom instllation](https://www.npmjs.com/package/react-dom)
+
 
 ## Author
 
