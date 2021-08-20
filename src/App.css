@@ -46,3 +46,10 @@ button {
 .no_border {
   border: none;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  width: 100vh;
+  margin-right: 15vw;
+}
