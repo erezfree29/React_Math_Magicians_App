@@ -1,5 +1,5 @@
 .calculation {
-  background-color: #858694;
+  background-color: #808080;
   height: 5vh;
 }
 
@@ -7,12 +7,14 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  float: right;
 }
 
 table {
   background-color: gray;
-  width: 30vw;
   border-spacing: 0.1px;
+  table-layout: fixed;
+  width: 200px;
 }
 
 table td {
@@ -43,4 +45,11 @@ button {
 
 .no_border {
   border: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  width: 100vh;
+  margin-right: 15vw;
 }
