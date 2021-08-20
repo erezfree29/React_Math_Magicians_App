@@ -33,10 +33,10 @@ Make the app run properly please make sure you have installed
 > 1.Nodejs
 [NodeJs Installation](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04)
 
-> 2. Webpack
+> 2.Webpack
 [Webpack Installation](https://webpack.js.org/guides/installation/)
 
-> 3. Babel
+> 3.Babel
 [Babel Installation](https://zoomadmin.com/HowToInstall/UbuntuPackage/babel)
 
 > 4.React-dom
