@@ -4,7 +4,7 @@ import '../App.css';
 
 import calculate from '../logic/calculate';
 
-function Calculator() {
+const Calculator = () => { //
   const [myState, setMyState] = useState({ total: null, operation: null, next: null });
   const display = (total, operation, next) => { // the curly brace opens a multiline function
     if (next !== null && operation === null) {
@@ -112,6 +112,6 @@ function Calculator() {
       </div>
     </div>
   );
-}
+};
 
 export default Calculator;
