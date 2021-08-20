@@ -41,6 +41,22 @@ Make the app run properly please make sure you have installed
 
 > 4.React-dom
 [React-dom Installation](https://www.npmjs.com/package/react-dom)
+=======
+> 3. type npm run start
+
+you  need to make sure you have the following on your machine
+
+> 1.install nodeJs on your local machine 
+[NodeJs Installation](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04)
+
+> 2. install webpack on your local machine
+[Webpack Installation](https://webpack.js.org/guides/installation/)
+
+> 3. install webpack on your local machine
+[Babel instllation](https://zoomadmin.com/HowToInstall/UbuntuPackage/babel)
+
+> 4. install react-dom on your local machine
+[React-doom instllation](https://www.npmjs.com/package/react-dom)
 
 ## Author
 
