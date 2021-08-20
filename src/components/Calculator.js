@@ -42,69 +42,69 @@ function Calculator() {
           <tbody>
             <tr>
               <td className="gray_cell" type="button">
-                <button type="submit" onClick={() => setMyState((myState) => calculate(myState, 'AC'))}>AC</button>
+                <button type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, 'AC') }))}>AC</button>
               </td>
               <td className="gray_cell" type="button">
-                <button type="submit" onClick={() => setMyState((myState) => calculate(myState, '+/-'))}>+/-</button>
+                <button type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, '+/-') }))}>+/-</button>
               </td>
               <td className="gray_cell" type="button">
-                <button type="submit" onClick={() => setMyState((myState) => calculate(myState, '%'))}>%</button>
+                <button type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, '%') }))}>%</button>
               </td>
               <td className="orange_cell" type="button">
-                <button className="orange_cell no_border" type="submit" onClick={() => setMyState((myState) => calculate(myState, '÷'))}>÷</button>
+                <button className="orange_cell no_border" type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, '÷') }))}>÷</button>
               </td>
             </tr>
             <tr>
               <td className="gray_cell" type="button">
-                <button type="submit" onClick={() => setMyState((myState) => calculate(myState, '7'))}>7</button>
+                <button type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, '7') }))}>7</button>
               </td>
               <td className="gray_cell" type="button">
-                <button type="submit" onClick={() => setMyState((myState) => calculate(myState, '8'))}>8</button>
+                <button type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, '8') }))}>8</button>
               </td>
               <td className="gray_cell" type="button">
-                <button type="submit" onClick={() => setMyState((myState) => calculate(myState, '9'))}>9</button>
+                <button type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, '9') }))}>9</button>
               </td>
               <td className="orange_cell" type="button">
-                <button className="orange_cell no_border" type="submit" onClick={() => setMyState((myState) => calculate(myState, 'x'))}>x</button>
+                <button className="orange_cell no_border" type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, 'x') }))}>x</button>
               </td>
             </tr>
             <tr>
               <td className="gray_cell" type="button">
-                <button type="submit" onClick={() => setMyState((myState) => calculate(myState, '4'))}>4</button>
+                <button type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, '4') }))}>4</button>
               </td>
               <td className="gray_cell" type="button">
-                <button type="submit" onClick={() => setMyState((myState) => calculate(myState, '5'))}>5</button>
+                <button type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, '5') }))}>5</button>
               </td>
               <td className="gray_cell" type="button">
-                <button type="submit" onClick={() => setMyState((myState) => calculate(myState, '6'))}>6</button>
+                <button type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, '6') }))}>6</button>
               </td>
               <td className="orange_cell" type="button">
-                <button className="orange_cell no_border" type="submit" onClick={() => setMyState((myState) => calculate(myState, '-'))}>-</button>
+                <button className="orange_cell no_border" type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, '-') }))}>-</button>
               </td>
             </tr>
             <tr>
               <td className="gray_cell" type="button">
-                <button type="submit" onClick={() => setMyState((myState) => calculate(myState, '1'))}>1</button>
+                <button type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, '1') }))}>1</button>
               </td>
               <td className="gray_cell" type="button">
-                <button type="submit" onClick={() => setMyState((myState) => calculate(myState, '2'))}>2</button>
+                <button type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, '2') }))}>2</button>
               </td>
               <td className="gray_cell" type="button">
-                <button type="submit" onClick={() => setMyState((myState) => calculate(myState, '3'))}>3</button>
+                <button type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, '3') }))}>3</button>
               </td>
               <td className="orange_cell" type="button">
-                <button className="orange_cell no_border" type="submit" onClick={() => setMyState((myState) => calculate(myState, '+'))}>+</button>
+                <button className="orange_cell no_border" type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, '+') }))}>+</button>
               </td>
             </tr>
             <tr>
               <td className="gray_cell" type="button" colSpan="2">
-                <button type="submit" onClick={() => setMyState((myState) => calculate(myState, '0'))}>0</button>
+                <button type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, '0') }))}>0</button>
               </td>
               <td className="gray_cell" type="button">
-                <button type="submit" onClick={() => setMyState((myState) => calculate(myState, '.'))}>.</button>
+                <button type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, '.') }))}>.</button>
               </td>
               <td className="orange_cell" type="button">
-                <button className="orange_cell no_border" type="submit" onClick={() => setMyState((myState) => calculate(myState, '='))}>=</button>
+                <button className="orange_cell no_border" type="submit" onClick={() => setMyState((myState) => ({ ...myState, ...calculate(myState, '=') }))}>=</button>
               </td>
             </tr>
           </tbody>
