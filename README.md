@@ -36,7 +36,7 @@ you  need to make sure you have the following on your machine
 > 2. install webpack on your local machine
 [Webpack Installation](https://webpack.js.org/guides/installation/)
 
-> 3. install webpack on your local machine
+> 3. install Babel on your local machine
 [Babel instllation](https://zoomadmin.com/HowToInstall/UbuntuPackage/babel)
 
 > 4. install react-dom on your local machine
