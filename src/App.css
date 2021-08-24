@@ -44,3 +44,68 @@ button {
 .no_border {
   border: none;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.links {
+  display: flex;
+  margin-right: 5%;
+}
+
+.link {
+  margin-left: 2%;
+  padding: 2px;
+}
+
+.cal_link {
+  border-right: solid 2px;
+  
+}
+
+.home_link {
+  border-right: solid 2px;
+}
+
+p {
+  font-size: 10px;
+  width: 65%;
+  margin-left: 1%;
+}
+
+h2 {
+  margin-left: 1%;
+}
+
+.name::before{
+  content: "\a\a";
+  white-space: pre;
+}
+
+.table_container {
+  float: right;
+  border: 1px solid gray;
+  height: 50vh;
+  width: 40vw;
+  margin-right: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+h1 {
+  margin-left: 1%;
+}
+
+.result {
+  font-size: 25px;
+  margin-left: 12%;
+  color: aqua;
+}
+
+
