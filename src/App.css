@@ -64,7 +64,6 @@ nav {
 
 .cal_link {
   border-right: solid 2px;
-  
 }
 
 .home_link {
@@ -81,7 +80,7 @@ h2 {
   margin-left: 1%;
 }
 
-.name::before{
+.name::before {
   content: "\a\a";
   white-space: pre;
 }
@@ -107,5 +106,3 @@ h1 {
   margin-left: 12%;
   color: aqua;
 }
-
-
