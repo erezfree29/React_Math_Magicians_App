@@ -1,38 +1,108 @@
+.calculation {
+  background-color: #858694;
+  height: 5vh;
+}
+
 .App {
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  background-color: gray;
+  width: 30vw;
+  border-spacing: 0.1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table td {
+  border-left: 1px solid gray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.gray_cell {
+  background-color: #e0e0e0;
+  border-bottom: 1px solid gray;
+}
+
+.align {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.orange_cell {
+  background-color: #f5913e;
+  border-bottom: 1px solid gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  width: 100%;
+  border: none;
+  background-color: #e0e0e0;
+}
+
+.no_border {
+  border: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.links {
+  display: flex;
+  margin-right: 5%;
+}
+
+.link {
+  margin-left: 2%;
+  padding: 2px;
+}
+
+.cal_link {
+  border-right: solid 2px;
+}
+
+.home_link {
+  border-right: solid 2px;
+}
+
+p {
+  font-size: 10px;
+  width: 65%;
+  margin-left: 1%;
+}
+
+h2 {
+  margin-left: 1%;
+}
+
+.name::before {
+  content: "\a\a";
+  white-space: pre;
+}
+
+.table_container {
+  float: right;
+  border: 1px solid gray;
+  height: 50vh;
+  width: 40vw;
+  margin-right: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+h1 {
+  margin-left: 1%;
+}
+
+.result {
+  font-size: 25px;
+  margin-left: 12%;
+  color: aqua;
 }
